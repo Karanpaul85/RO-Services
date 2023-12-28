@@ -1,5 +1,5 @@
 <?php
-$to="info@roservicenearme.in";
+$to="info@roservicenearme.in, karanpaul85@gmail.com";
 $subject = 'Enquiry From RO Service Near Me';
 $name= $_POST['name'];
 $email = $_POST['email'];

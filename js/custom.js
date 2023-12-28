@@ -1,10 +1,14 @@
-var splide = new Splide(".splide", {
-  type: "loop",
-  perPage: 1,
-  perMove: 1,
-  autoplay: true,
-});
-splide.mount();
+var sliderSec = document.querySelector(".splide");
+if (sliderSec) {
+  var splide = new Splide(".splide", {
+    type: "loop",
+    perPage: 1,
+    perMove: 1,
+    autoplay: true,
+  });
+  splide.mount();
+}
+
 //btn click
 const links = document.querySelectorAll("nav ul li a");
 const formLink = document.querySelectorAll(".gotoform");
@@ -52,7 +56,7 @@ function smoothScroll(e) {
 //form validation
 var form = document.getElementById("contactForm");
 
-form.addEventListener("submit", function (error) {
+form && form.addEventListener("submit", function (error) {
   var errorClasses = document.querySelectorAll(".errors"),
     name = document.getElementById("name"),
     email = document.getElementById("email"),

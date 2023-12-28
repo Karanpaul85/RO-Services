@@ -179,6 +179,7 @@ nav ul li a:hover {
   margin: 0;
   position: absolute;
   bottom: 16px;
+  padding: 0;
 }
 .support .otherSupport {
   width: 100%;
@@ -259,6 +260,15 @@ footer {
   background: #002ba7;
   color: #fff;
 }
+.thankyouContent {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 50px);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
 
 @-webkit-keyframes scale-up-center {
   0% {
@@ -292,6 +302,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 9;
   }
   nav.open {
     top: 0;
@@ -313,6 +324,7 @@ footer {
     top: calc(50% - 3.5px);
     transition: all ease-in-out 0.25s;
     right: 20px;
+    z-index: 9;
   }
   .hm::before {
     content: "";
@@ -383,6 +395,18 @@ footer {
     align-items: center;
     justify-content: center;
     position: relative;
+  }
+  .headerRight .topRight-Icons a:last-child:before {
+    content: "";
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    background: rgba(43, 178, 212, 0.5);
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-animation: scale-up-center 0.45s ease-in-out infinite alternate;
+    animation: scale-up-center 0.45s ease-in-out infinite alternate;
+    animation-delay: 0.25s;
   }
   .headerRight .topRight-Icons a::before {
     content: "";

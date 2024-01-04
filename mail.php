@@ -1,6 +1,6 @@
 <?php
-$to="info@roservicenearme.in, karanpaul85@gmail.com";
-$subject = 'Enquiry From RO Service Near Me';
+$to="harpreets0728@gmail.com, karanpaul85@gmail.com";
+$subject = 'Enquiry From servicerepair.in';
 $name= $_POST['name'];
 $email = $_POST['email'];
 $contactno = $_POST['phone'];
@@ -10,7 +10,7 @@ $m1 = "<h2>Inquiry </h2><br><hr>"."<br>";
 $m2 = "<b>Name :</b>".$name."<br>";
 $m3 = "<b>Email :</b>".$email."<br>";
 $m4 = "<b>Phone No :</b>".$contactno ."<br>";
-$m5 = "<b>Phone No :</b>".$servicesType ."<br>";
+$m5 = "<b>Service Type :</b>".$servicesType ."<br>";
 $m6 = "<b>Messgae:</b>".$comments."<br>";
 $message = $m1.$m2.$m3.$m4.$m5.$m6;
 
